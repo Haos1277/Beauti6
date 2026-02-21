@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салон красоты 'BeautiPerfect'</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Салон красоты 'BeautiPerfect'</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#before-after">До и после</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#booking">Запись</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Добро пожаловать в 'BeautiPerfect' — место, где создаётся красота и уверенность! Мы предлагаем широкий спектр услуг в стильной атмосфере.</p>
+        <img src="https://example.com/salon-interior.jpg" alt="Интерьер салона" class="responsive-img">
+    </section>
+
+    <section id="services">
+        <h2>Наши услуги</h2>
+        <ul>
+            <li>Стрижка - 1200₽</li>
+            <li>Окрашивание - 2500₽</li>
+            <li>Маникюр - 1000₽</li>
+            <li>Педикюр - 1200₽</li>
+            <li>Массаж - 2000₽</li>
+        </ul>
+    </section>
+
+    <section id="before-after">
+        <h2>Примеры до и после</h2>
+        <div class="gallery">
+            <img src="https://example.com/before-image1.jpg" alt="До" class="gallery-img">
+            <img src="https://example.com/after-image1.jpg" alt="После" class="gallery-img">
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Отзывы клиентов</h2>
+        <blockquote>
+            <p>«Это лучший салон в городе! Профессионализм мастеров на высшем уровне!»</p>
+            <cite>- Анастасия</cite>
+        </blockquote>
+        <blockquote>
+            <p>«Красота и уют, а также качественные услуги! Обязательно вернусь!»</p>
+            <cite>- Ольга</cite>
+        </blockquote>
+    </section>
+
+    <section id="booking">
+        <h2>Запись на услуги</h2>
+        <form action="#" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="service">Выберите услугу:</label>
+            <select id="service" name="service">
+                <option value="haircut">Стрижка</option>
+                <option value="coloring">Окрашивание</option>
+                <option value="manicure">Маникюр</option>
+                <option value="pedicure">Педикюр</option>
+                <option value="massage">Массаж</option>
+            </select>
+            <button type="submit">Записаться</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Телефон: <a href="tel:+123456789">+1 234 567 89</a></p>
+        <p>Адрес: Улица Красоты, 10, Город</p>
+    </section>
+
+    <footer>
+        <p>© 2023 Салон красоты 'BeautiPerfect'</p>
+    </footer>
+    <script>
+        // Добавление анимации
+        document.addEventListener('DOMContentLoaded', function() {
+            const aboutSection = document.querySelector('#about');
+            aboutSection.style.opacity = 0;
+            setTimeout(() => {
+                aboutSection.style.opacity = 1;
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
